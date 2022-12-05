@@ -19,10 +19,10 @@ const Category = () => {
     <Div>
       <Title>Categories</Title>
       <div>
-        <CategoryEl category="bed" img={'/img/bed4.jpg'} />
-        <CategoryEl category="desk" img={'/img/desk2.jpg'} />
-        <CategoryEl category="sofa" img={'/img/sofa4.jpg'} />
-        <CategoryEl category="table" img={'/img/table7.jpg'} />
+        <CategoryEl category="bed" img={'/assets/img/bed4.jpg'} />
+        <CategoryEl category="desk" img={'/assets/img/desk2.jpg'} />
+        <CategoryEl category="sofa" img={'/assets/img/sofa4.jpg'} />
+        <CategoryEl category="table" img={'/assets/img/table7.jpg'} />
       </div>
     </Div>
   );

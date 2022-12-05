@@ -1,31 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import px2vw from '../Utils/px2vw';
 
-const El = styled.input`
-  width: ${({ width }) => width}px;
-  height: ${({ height }) => height}px;
+const Input = styled.input`
+  width: ${({ width }) => px2vw(width)};
+  height: ${({ height }) => px2vw(height)}px;
   background-color: #fff;
   border: none;
-  border-bottom: 1px solid ${({ theme }) => theme.txt};
+  padding: 0 8px;
+  border-bottom: ${(props) =>
+    props.wrong
+      ? '1px solid' + props.theme.errorColor
+      : '1px solid' + props.theme.txt};
   transition: ${({ theme }) => theme.transition};
-`;
+  font: 400 16px/32px ${({ theme }) => theme.mont};
+  color: ${({ theme }) => theme.txt};
+  &:focus {
+    border-bottom: ${(props) =>
+      props.wrong
+        ? '1px solid' + props.theme.errorColor
+        : '1px solid' + props.theme.main};
 
-const Input = (
-  value,
-  onChange = () => {},
-  width = 120,
-  height = 32,
-  placeholder = ''
-) => {
-  return (
-    <El
-      value={value}
-      onChange={onChange}
-      width={width}
-      height={height}
-      placeholder={placeholder}
-    />
-  );
-};
+    background-color: ${({ theme }) => theme.cream};
+  }
+`;
 
 export default Input;

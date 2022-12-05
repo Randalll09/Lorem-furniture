@@ -11,7 +11,7 @@ const Foot = styled.footer`
   padding: 30px ${({ theme }) => theme.left};
   height: 200px;
   background-color: ${({ theme }) => theme.beige};
-  border-top: 1px solid ${({ theme }) => theme.txt};
+  border-top: ${({ theme }) => theme.border};
   > div {
     display: flex;
     justify-content: space-between;

@@ -8,7 +8,7 @@ const theme = {
   main: '#00917C',
   darkMain: '#39665F',
   beige: '#fffffa',
-  cream: '#E3E4CC',
+  cream: '#f3f3d5',
 
   border: '1px solid #e0e0e0',
   transition: 'all 0.2s ease-in-out',

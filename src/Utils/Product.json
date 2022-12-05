@@ -1,6 +1,6 @@
 [
   {
-    "src": "/img/bed1.jpg",
+    "src": "/assets/img/bed1.jpg",
     "name": "Cottage Feel",
     "price": 100,
     "sale": 10,
@@ -8,7 +8,7 @@
     "id": "001"
   },
   {
-    "src": "/img/bed2.jpg",
+    "src": "/assets/img/bed2.jpg",
     "name": "Coazy Fluff",
     "price": 120,
     "sale": 10,
@@ -16,7 +16,7 @@
     "id": "002"
   },
   {
-    "src": "/img/bed3.jpg",
+    "src": "/assets/img/bed3.jpg",
     "name": "Vintage Royals",
     "price": 217,
     "sale": 15,
@@ -24,42 +24,42 @@
     "id": "003"
   },
   {
-    "src": "/img/bed4.jpg",
+    "src": "/assets/img/bed4.jpg",
     "name": "Simply Basic",
     "price": 92,
     "category": ["bed", "wood"],
     "id": "004"
   },
   {
-    "src": "/img/bed5.jpg",
+    "src": "/assets/img/bed5.jpg",
     "name": "You and Me",
     "price": 149,
     "category": ["bed", "wood"],
     "id": "005"
   },
   {
-    "src": "/img/bed6.jpg",
+    "src": "/assets/img/bed6.jpg",
     "name": "Steady Life",
     "price": 167,
     "category": ["bed", "wood"],
     "id": "006"
   },
   {
-    "src": "/img/desk1.jpg",
+    "src": "/assets/img/desk1.jpg",
     "name": "Gray",
     "price": 127,
     "category": ["desk", "steel"],
     "id": "007"
   },
   {
-    "src": "/img/desk2.jpg",
+    "src": "/assets/img/desk2.jpg",
     "name": "Chocolate",
     "price": 117,
     "category": ["desk", "steel"],
     "id": "008"
   },
   {
-    "src": "/img/desk3.jpg",
+    "src": "/assets/img/desk3.jpg",
     "name": "Zen",
 
     "price": 121,
@@ -68,7 +68,7 @@
     "id": "009"
   },
   {
-    "src": "/img/desk4.jpg",
+    "src": "/assets/img/desk4.jpg",
     "name": "Desert",
     "price": 72,
     "category": ["desk", "wood"],
@@ -76,35 +76,35 @@
   },
 
   {
-    "src": "/img/sofa1.jpg",
+    "src": "/assets/img/sofa1.jpg",
     "name": "Approach",
     "price": 147,
     "category": ["sofa", "cloth"],
     "id": "011"
   },
   {
-    "src": "/img/sofa2.jpg",
+    "src": "/assets/img/sofa2.jpg",
     "name": "City",
     "price": 161,
     "category": ["sofa", "cloth"],
     "id": "012"
   },
   {
-    "src": "/img/sofa3.jpg",
+    "src": "/assets/img/sofa3.jpg",
     "name": "Space",
     "price": 237,
     "category": ["sofa", "cloth"],
     "id": "013"
   },
   {
-    "src": "/img/sofa4.jpg",
+    "src": "/assets/img/sofa4.jpg",
     "name": "Vines",
     "price": 91,
     "category": ["sofa", "cloth"],
     "id": "014"
   },
   {
-    "src": "/img/sofa5.jpg",
+    "src": "/assets/img/sofa5.jpg",
     "name": "Jungle",
     "price": 57,
     "sale": 20,
@@ -112,42 +112,42 @@
     "id": "015"
   },
   {
-    "src": "/img/sofa6.jpg",
+    "src": "/assets/img/sofa6.jpg",
     "name": "Round",
     "price": 91,
     "category": ["sofa", "cloth"],
     "id": "016"
   },
   {
-    "src": "/img/sofa7.jpg",
+    "src": "/assets/img/sofa7.jpg",
     "name": "Office",
     "price": 133,
     "category": ["sofa", "cloth"],
     "id": "017"
   },
   {
-    "src": "/img/sofa8.jpg",
+    "src": "/assets/img/sofa8.jpg",
     "name": "Books",
     "price": 63,
     "category": ["sofa", "wood", "outdoor"],
     "id": "018"
   },
   {
-    "src": "/img/table1.jpg",
+    "src": "/assets/img/table1.jpg",
     "name": "Neutral",
     "price": 88,
     "category": ["table", "wood"],
     "id": "019"
   },
   {
-    "src": "/img/table2.jpg",
+    "src": "/assets/img/table2.jpg",
     "name": "Bees",
     "price": 38,
     "category": ["table", "wood"],
     "id": "020"
   },
   {
-    "src": "/img/table3.jpg",
+    "src": "/assets/img/table3.jpg",
     "name": "Euro",
     "price": 62,
     "sale": 15,
@@ -155,14 +155,14 @@
     "id": "021"
   },
   {
-    "src": "/img/table4.jpg",
+    "src": "/assets/img/table4.jpg",
     "name": "Orient",
     "price": 70,
     "category": ["table", "wood"],
     "id": "022"
   },
   {
-    "src": "/img/table5.jpg",
+    "src": "/assets/img/table5.jpg",
     "name": "Good Time",
     "price": 60,
     "sale": 20,
@@ -170,21 +170,21 @@
     "id": "023"
   },
   {
-    "src": "/img/table6.jpg",
+    "src": "/assets/img/table6.jpg",
     "name": "Neutral",
     "price": 60,
     "category": ["table", "steel", "outdoor"],
     "id": "024"
   },
   {
-    "src": "/img/table7.jpg",
+    "src": "/assets/img/table7.jpg",
     "name": "Coffee",
     "price": 28,
     "category": ["table", "wood"],
     "id": "024"
   },
   {
-    "src": "/img/table8.jpg",
+    "src": "/assets/img/table8.jpg",
     "name": "Latte",
     "price": 32,
     "sale": 15,

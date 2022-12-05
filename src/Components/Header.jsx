@@ -14,7 +14,7 @@ const Head = styled.header`
   height: 92px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid ${({ theme }) => theme.txt};
+  border-bottom: ${({ theme }) => theme.border};
   color: ${({ theme }) => theme.txt};
   h1 {
     font: 400 24px/92px ${({ theme }) => theme.mont};

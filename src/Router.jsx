@@ -11,6 +11,7 @@ import AboutPage from './About/AboutPage';
 import ShoppingPage from './Shop/ShoppingPage';
 import ContactPage from './Contact/ContactPage';
 import LoginPage from './Register/LoginPage';
+import ItemDetailPage from './Shop/ItemDetailPage';
 
 const queryClient = new QueryClient();
 
@@ -19,13 +20,14 @@ const Router = () => {
     <RecoilRoot>
       <QueryClientProvider client={queryClient}>
         <GlobalStyle />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <ThemeProvider theme={theme}>
             <Routes>
               <Route path="/" element={<PageLayout />}>
                 <Route exact path="" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/shop" element={<ShoppingPage />} />
+                <Route path="/shop/item/:id" element={<ItemDetailPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/login" element={<LoginPage />} />
               </Route>

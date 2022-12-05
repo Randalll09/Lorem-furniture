@@ -1,21 +1,21 @@
 [
   {
-    "src": "/img/interior1.jpg",
+    "src": "/assets/img/interior1.jpg",
     "title": "Your Own\nDestination",
     "description": "Simple space within your home"
   },
   {
-    "src": "/img/interior2.jpg",
+    "src": "/assets/img/interior2.jpg",
     "title": "Place of Mind",
     "description": "Home is where you live"
   },
   {
-    "src": "/img/interior3.jpg",
+    "src": "/assets/img/interior3.jpg",
     "title": "A Dreamable life",
     "description": "Dreams come true\nwith LoreM"
   },
   {
-    "src": "/img/interior4.jpg",
+    "src": "/assets/img/interior4.jpg",
     "title": "It's\nYou",
     "description": "Your Home, is your personality."
   }

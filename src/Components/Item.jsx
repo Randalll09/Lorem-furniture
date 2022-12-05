@@ -1,6 +1,7 @@
 import React from 'react';
 import px2vw from '../Utils/px2vw';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const Div = styled.div`
   width: ${px2vw(240)};
@@ -92,8 +93,9 @@ const Div = styled.div`
 `;
 
 const Item = ({ data }) => {
+  const navigate = useNavigate();
   return (
-    <Div>
+    <Div onClick={() => navigate(`/shop/item/${data.id}`)}>
       <img src={data.src} />
       <div className="onHover">
         <svg viewBox="0 0 512 512">

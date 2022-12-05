@@ -7,12 +7,14 @@ const Div = styled.div``;
 
 const ItemDetailPage = () => {
   const params = useParams();
-  console.log(parseInt(params.id));
-  // const itemData = Product[params.id - 1];
+  const itemData = Product[parseInt(params.id) - 1];
 
   return (
     <Div>
-      <div></div>
+      <div>
+        <img src={itemData.src} alt={itemData.name} />
+        <div></div>
+      </div>
     </Div>
   );
 };

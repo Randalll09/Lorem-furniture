@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import theme from './Utils/theme';
 import HomePage from './Home/HomePage';
@@ -17,10 +17,10 @@ const queryClient = new QueryClient();
 
 const Router = () => {
   return (
-    <RecoilRoot>
-      <QueryClientProvider client={queryClient}>
-        <GlobalStyle />
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
+      <RecoilRoot>
+        <QueryClientProvider client={queryClient}>
+          <GlobalStyle />
           <ThemeProvider theme={theme}>
             <Routes>
               <Route path="/" element={<PageLayout />}>
@@ -33,9 +33,9 @@ const Router = () => {
               </Route>
             </Routes>
           </ThemeProvider>
-        </BrowserRouter>
-      </QueryClientProvider>
-    </RecoilRoot>
+        </QueryClientProvider>
+      </RecoilRoot>
+    </HashRouter>
   );
 };
 

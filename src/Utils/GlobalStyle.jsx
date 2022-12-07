@@ -18,6 +18,9 @@ button{
   cursor: pointer;
   background: none;
   border: none;
+  &:disabled{
+    cursor: default;
+  }
 }
 input{
   border: none;

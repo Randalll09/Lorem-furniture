@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
 import px2vw from '../Utils/px2vw';
+import { loginState } from '../Utils/recoilState';
 import LoreMLogo from './LoreMLogo';
+import CartSVG from './svg/CartSVG';
 
 const Head = styled.header`
   position: fixed;
@@ -30,6 +33,7 @@ const Head = styled.header`
 `;
 
 const Header = () => {
+  const loggedIn = useRecoilValue(loginState);
   return (
     <Head>
       <Link to="/">
@@ -49,7 +53,14 @@ const Header = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          {!loggedIn ? (
+            <Link to="/login">Login</Link>
+          ) : (
+            <p>
+              Cart
+              <CartSVG />
+            </p>
+          )}
         </li>
       </ul>
     </Head>

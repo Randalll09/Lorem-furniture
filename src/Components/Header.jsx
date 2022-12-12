@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
 import px2vw from '../Utils/px2vw';
 import { loginState } from '../Utils/recoilState';
+import Cart from './Cart';
 import LoreMLogo from './LoreMLogo';
 import CartSVG from './svg/CartSVG';
+import { AnimatePresence } from 'framer-motion';
 
 const Head = styled.header`
   position: fixed;
@@ -34,36 +36,42 @@ const Head = styled.header`
 
 const Header = () => {
   const loggedIn = useRecoilValue(loginState);
+  const [openCart, setOpenCart] = useState(false);
   return (
-    <Head>
-      <Link to="/">
-        <LoreMLogo height={92} />
-      </Link>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          {!loggedIn ? (
-            <Link to="/login">Login</Link>
-          ) : (
-            <p>
-              Cart
-              <CartSVG />
-            </p>
-          )}
-        </li>
-      </ul>
-    </Head>
+    <>
+      <Head>
+        <Link to="/">
+          <LoreMLogo height={92} />
+        </Link>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            {!loggedIn ? (
+              <Link to="/login">Login</Link>
+            ) : (
+              <p onClick={() => setOpenCart((prev) => !prev)}>
+                Cart
+                <CartSVG />
+              </p>
+            )}
+          </li>
+        </ul>
+        <AnimatePresence>
+          {openCart ? <Cart setOpen={setOpenCart} /> : null}
+        </AnimatePresence>
+      </Head>
+    </>
   );
 };
 
